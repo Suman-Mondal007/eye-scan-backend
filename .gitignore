@@ -1,0 +1,60 @@
+# Python Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Environment Variables / Secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# ML Model Files (large binaries - store in cloud storage)
+*.h5
+*.keras
+*.pth
+*.pkl
+*.onnx
+*.tflite
+*.pb
+# Exception: allow our small (5MB) trained cataract model
+!models/cataract_model.h5
+
+# Logs
+*.log
+logs/
+
+# Distribution / Build
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.sw?
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Uploaded / Temp Files
+uploads/
+temp/
+tmp/
